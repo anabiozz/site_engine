@@ -1,0 +1,14 @@
+.about-image {
+	overflow: hidden;
+	border: 4px solid $border-color;
+	margin-bottom: 40px;
+	img {
+		width: 100%;
+		height: 400px !important;
+		display: block;
+	}
+}
+
+#about_title {
+	margin-top: 40px;
+}

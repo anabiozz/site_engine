@@ -1,0 +1,159 @@
+.side-content {
+	float: left;
+	width: 20%;
+	height: 100%;
+	position: fixed;
+	background-color: #102F44;
+	overflow-y: hidden;
+	/* @include media(max-width 1290px) {
+		overflow-y: scroll;
+		width: 20%;
+	} */
+}
+
+.top-section {
+	margin-top: 40px;
+}
+
+.profile-image {
+	width: 190px;
+	height: 190px;
+	display: block;
+	margin: 0 auto;
+	border: 3px solid $white;
+	@include border-radius(100px);
+	overflow: hidden;
+	margin-bottom: 20px;
+	img {
+		width: 100%;
+		display: block;
+    	margin: 0 auto;
+	}
+	@include media(max-width 1290px) {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+h3.profile-title,
+p.profile-description {
+	margin-bottom: 5px;
+	margin: 20px 40px;
+	color: $white;
+	font-size: 18px;
+	font-family: 'gilroy';
+}
+
+.main-navigation {
+	li {
+		display: block;
+		a {
+			padding: 10px 40px;
+			display: block;
+			color: $white;
+			font-size: 14px;
+			font-family: 'gilroy';
+			text-decoration: none;
+			i {
+				margin-right: 20px;
+				vertical-align: middle;
+				font-size: 24px;
+			}
+			&:hover {
+				background: darken(#CED2D9, 2%);
+			}
+			&.active {
+				background: darken(#CED2D0, 10%);
+				&:hover {
+					background: darken(#CED2D0, 10%);
+				}
+			}
+		}
+	}
+}
+
+.main-navigation {
+	@include media(max-width $tablet) {
+		a {
+			padding: 10px;
+			&.active {
+				background: $dark-bg !important;
+			}
+			&:hover {
+				background: $dark-bg !important;
+			}
+		}
+	}
+}
+
+.social-icons {
+	margin-top: 30px;
+	display: block;
+	text-align: center;
+	padding: 0 40px;
+	li {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	a {
+		font-size: 18px;
+		color: $white;
+		&:hover {
+			color: darken(#0071A9, 2%);
+		}
+	}
+}
+
+
+/*
+
+
+.responsive-header {
+	background: $dark-bg;
+	text-align: center;
+	@include media(max-width $tablet) {
+		.main-navigation {
+			margin-top: 10px;
+			display: none;
+		}
+	}
+	p {
+		@include media(max-width $tablet) {
+			color: $white;
+		}
+	}
+	@include media(max-width $tablet) {
+		.profile-image {
+			float: left;
+			width: 100px;
+			height: 100px;
+			@include border-radius(50px);
+			overflow: hidden;
+			margin-right: 30px;
+		}
+		.profile-content {
+			text-align: left;
+			margin-top: 30px;
+			overflow: hidden;
+		}
+	}
+}
+
+.top-section {
+	@include media(max-width $tablet) {
+		padding-bottom: 0;
+	}
+}
+
+.toggle-menu {
+	width: 100%;
+	display: block;
+	padding: 20px;
+	margin-top: 30px;
+	background: $accent;
+	color: $white;
+	font-size: 18px;
+	&:hover {
+		color: $white;
+	}
+} */
